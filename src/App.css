@@ -1,5 +1,25 @@
 .App {
-  text-align: center;
+  
+  color: rgb(193, 110, 200);
+  width: 80%;
+  height: 100vh;
+  background-color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  
+  
+
+  
+  
+}
+@media (max-width: 560px){
+  .App{
+    width: 100%;
+    margin:0;
+  }
 }
 
 .App-logo {

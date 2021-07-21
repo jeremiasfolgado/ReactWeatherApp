@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import './SearchBar.css'
 
 const SearchBar = ({onSearch}) =>{
     const [cityName, setCityName] = useState('')
@@ -13,9 +14,9 @@ const SearchBar = ({onSearch}) =>{
     }
 
     return (
-        <form onSubmit={e=>handleSubmit(e)}>
-            <input type='text' placeholder='Type here...' value={cityName} onChange={e => setCityName(e.target.value)} />
-            <input type='submit' value="Add"/>
+        <form onSubmit={e=>handleSubmit(e)} className="form">
+            <input className="input-city" type='text' placeholder='Type here...' value={cityName} onChange={e => setCityName(e.target.value)} />
+            <input className="add" type='submit' value="Add"/>
 
         </form>
     )

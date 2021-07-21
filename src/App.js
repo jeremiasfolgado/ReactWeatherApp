@@ -6,33 +6,35 @@ import NavBar from './components/NavBar/NavBar'
 import Cards from './components/Cards/Cards'
 import CityDetail from './components/CityDetail/CityDetail'
 import About from './components/About/About'
-import Footer from './components/Footer/Footer'
+
 
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
   const [cities, setCities] = useState([])
-  // useEffect(()=>{
-  //   async function axiosData(){
-  //     const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=london&appid=1bcbfca8f0a7bb9d2f22e0df86b6dcd4&units=metric&lang=es`);
-  //     const {data} = call
-  //     console.log("en el use", data)
-  //   }
-  //   axiosData()
-
-
-  // })
-  console.log(cities)
+  
   
   const onSearch = async (cityName) => {
      try {
       const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1bcbfca8f0a7bb9d2f22e0df86b6dcd4&units=metric&lang=es`)
       const {data} = call;
       if(data){
+        console.log(data)
         const city = {
           name: data.name,
-          id:data.id
+          id:data.id,
+          wind: data.wind.speed,
+          min: Math.round(data.main.temp_min) ,
+          max: Math.round(data.main.temp_max),
+          feelsLike: data.main.feels_like,
+          temp: Math.round(data.main.temp),
+          humidity: data.main.humidity,
+          description: data.weather[0].description,
+          icon: data.weather[0].icon,
+
+
+
         }
         if(!!cities.find(c => c.id === city.id)){
           return 
@@ -64,7 +66,7 @@ function App() {
       <Route exact path="/" render={()=> <Cards cities={cities} onClose={onClose}/>} />
       <Route exact path="/city/:id" render={({match})=> <CityDetail city={onDetail(match.params.id)}/>} />
       <Route exact path="/about" component={About} />
-      <Route path="/" component={Footer} /> 
+     
 
     </div>
   );

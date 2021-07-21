@@ -9,10 +9,10 @@ const NavBar = ({onSearch}) =>{
     console.log("en nav", onSearch)
     return (
         <div className='nav'>
-            <Link to="/">
+            <Link className="link-detail" to="/">
                 <span>inicio</span>
             </Link>
-            <Link to="/about">
+            <Link className="link-detail" to="/about">
                 <span>about</span>
             </Link>
             <SearchBar onSearch={onSearch}/>

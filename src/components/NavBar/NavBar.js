@@ -6,7 +6,7 @@ import './NavBar.css'
 
 
 const NavBar = ({onSearch}) =>{
-    console.log("en nav", onSearch)
+    
     return (
         <div className='nav'>
             <Link className="link-detail" to="/">

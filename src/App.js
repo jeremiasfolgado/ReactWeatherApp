@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { Route } from 'react-router-dom';
 import axios from 'axios';
 
@@ -8,19 +8,21 @@ import CityDetail from './components/CityDetail/CityDetail'
 import About from './components/About/About'
 
 
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   const [cities, setCities] = useState([])
+  const APIKEY = process.env.REACT_APP_APIKEY
   
   
   const onSearch = async (cityName) => {
+
      try {
-      const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=1bcbfca8f0a7bb9d2f22e0df86b6dcd4&units=metric&lang=es`)
+      const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`)
       const {data} = call;
       if(data){
-        console.log(data)
+        
         const city = {
           name: data.name,
           id:data.id,

@@ -17,7 +17,7 @@ const CityDetail = ({city}) =>{
             <div className="detail-container">
             <div className="icon-title">
                 <h4>{city.name}</h4>
-                <img src={`http://openweathermap.org/img/wn/${city.icon}@4x.png`}></img>
+                <img src={`http://openweathermap.org/img/wn/${city.icon}@4x.png`} alt="weather icon"></img>
                 <span>{city.description}</span>
             </div>
             <div className="aditional-info">

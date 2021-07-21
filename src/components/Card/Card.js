@@ -8,7 +8,7 @@ const Card = ({city, onClose}) =>{
         <div className="card">
             <div className="row-one">
                 <span>{city.temp} °</span>    
-                <img src={`http://openweathermap.org/img/wn/${city.icon}@2x.png`}></img>
+                <img src={`http://openweathermap.org/img/wn/${city.icon}@2x.png`} alt="weather icon"></img>
             </div>
             <div className="row-two">
                 <h4>{city.name}</h4>

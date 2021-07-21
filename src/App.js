@@ -14,17 +14,13 @@ import './App.css';
 function App() {
   const [cities, setCities] = useState([])
   const APIKEY = process.env.REACT_APP_APIKEY
+  const URL = process.env.REACT_APP_URL
   
   
   const onSearch = async (cityName) => {
 
      try {
-      const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`, {
-        'mode': 'cors',
-        'headers': {
-          'Access-Control-Allow-Origin': '*',
-        }
-      })
+      const call = await axios.get(`${URL}?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`)
       const {data} = call;
       if(data){
         

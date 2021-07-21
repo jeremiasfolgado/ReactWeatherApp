@@ -19,7 +19,12 @@ function App() {
   const onSearch = async (cityName) => {
 
      try {
-      const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`)
+      const call = await axios.get(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`, {
+        'mode': 'cors',
+        'headers': {
+          'Access-Control-Allow-Origin': '*',
+        }
+      })
       const {data} = call;
       if(data){
         

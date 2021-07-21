@@ -14,7 +14,7 @@ import './App.css';
 function App() {
   const [cities, setCities] = useState([])
   const APIKEY = process.env.REACT_APP_APIKEY
-  const URL = process.env.REACT_APP_URL
+  
   
   
   const onSearch = async (cityName) => {

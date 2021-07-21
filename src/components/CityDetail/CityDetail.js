@@ -34,7 +34,7 @@ const CityDetail = ({city}) =>{
                 
                 <div className="more-info">
                     <span>Viento</span>
-                    <span>{city.wind} km/h</span>
+                    {/* <span>{city.wind} km/h</span> */}
                     
                     
                 </div>

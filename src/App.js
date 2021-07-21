@@ -20,7 +20,7 @@ function App() {
   const onSearch = async (cityName) => {
 
      try {
-      const call = await axios.get(`${URL}?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`)
+      const call = await axios.get(`${URL}?q=${cityName}&appid=${APIKEY}&units=metric&lang=es`, {crossdomain : true})
       const {data} = call;
       if(data){
         

@@ -1,5 +1,6 @@
 .main-container{
     width: 90%;
+    max-width: 900px;
     margin: auto;
     color: white;
     margin-top: 2rem;
@@ -15,10 +16,10 @@
 .icon-title{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 .aditional-info{
     width: 100%;
@@ -26,6 +27,7 @@
     justify-content: space-around;
     font-size: 1.4rem;
     margin-bottom: 2rem;
+    margin-top: 1rem;
     
 
 }

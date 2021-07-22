@@ -10,10 +10,10 @@ const NavBar = ({onSearch}) =>{
     return (
         <div className='nav'>
             <Link className="link-detail" to="/">
-                <span>inicio</span>
+                <span>Inicio</span>
             </Link>
             <Link className="link-detail" to="/about">
-                <span>about</span>
+                <span>Sobre la App</span>
             </Link>
             <SearchBar onSearch={onSearch}/>
             

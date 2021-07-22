@@ -1,0 +1,34 @@
+.sobre-mi-container{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.sobre-mi-container span{
+    font-size: 1.2rem;
+}
+
+.title{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+.actions-container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3rem;
+    margin-top:2rem;
+    justify-content: space-around;
+    
+
+}
+.action{
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 5rem;
+}
+
+.link-action{
+    text-decoration: none;
+    color: white;
+}

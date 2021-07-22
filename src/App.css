@@ -1,6 +1,6 @@
 .App {
   
-  transition: all 0.5s ease-out;
+  
   font-family: monospace;
   
   margin: auto;
@@ -14,12 +14,7 @@
   
   
 }
-@media (max-width: 560px){
-  .App{
-    width: 100%;
-    margin:0;
-  }
-}
+
 
 .App-logo {
   height: 40vmin;

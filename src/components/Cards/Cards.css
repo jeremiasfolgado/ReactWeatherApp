@@ -10,6 +10,11 @@
     margin: auto;
     margin-top: 3rem;
 }
+.message-container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 600px) {
     .cards-container{
         width: 100%;

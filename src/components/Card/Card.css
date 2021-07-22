@@ -2,7 +2,7 @@
     border: 8px solid white;
     color:white;
     border-radius: 10px;
-    width: 250px;
+    width: 280px;
     height: 300px;
     margin: 2rem;
     display: flex;
@@ -41,7 +41,14 @@
     text-decoration: none;
     color: white;
 }
+.button{
+    border: 3px solid white;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
 .button:hover{
+    background-color: white;
+    color: #282c34 ;
     cursor: pointer;
     
 }

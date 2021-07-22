@@ -15,8 +15,8 @@ const SearchBar = ({onSearch}) =>{
 
     return (
         <form onSubmit={e=>handleSubmit(e)} className="form">
-            <input className="input-city" type='text' placeholder='Type here...' value={cityName} onChange={e => setCityName(e.target.value)} />
-            <input className="add" type='submit' value="Add"/>
+            <input className="input-city" type='text' placeholder=' ciudad...' value={cityName} onChange={e => setCityName(e.target.value)} />
+            <button className="add" type='submit' value="Add">Agregar</button>
 
         </form>
     )

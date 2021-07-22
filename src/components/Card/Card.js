@@ -32,7 +32,7 @@ const Card = ({city, onClose}) =>{
                     </div>
                 </Link>
 
-                <div className="button" onClick={()=> onClose(city.id)} >quit </div>
+                <div className="button" onClick={()=> onClose(city.id)} >quitar </div>
                     
                     
             </div>

@@ -27,6 +27,12 @@
 
 
 }
+.add:hover{
+    background-color: white;
+    color: #282c34 ;
+    cursor: pointer;
+    
+}
 @media (max-width:500px) {
     .form{
         width: 80%;

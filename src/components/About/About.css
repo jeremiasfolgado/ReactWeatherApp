@@ -27,6 +27,12 @@
     padding: 0.5rem;
     width: 5rem;
 }
+.action:hover{
+    background-color: white;
+    color: #282c34 ;
+    cursor: pointer;
+    
+}
 
 .link-action{
     text-decoration: none;

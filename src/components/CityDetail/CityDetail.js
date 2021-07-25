@@ -27,8 +27,8 @@ const CityDetail = ({city}) =>{
                         
                     </div>
                     <div className="more-info">
-                        <span>Humedad / 100 </span>
-                        <span>{city.humidity}</span>
+                        <span>Humedad </span>
+                        <span>{city.humidity}  / 100</span>
                     </div>
                         
                     
